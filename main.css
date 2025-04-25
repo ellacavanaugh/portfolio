@@ -1,0 +1,47 @@
+@font-face {
+    src: url("fonts/FormaDJRVariable[opsz\,slnt\,wdth\,wght]-Edu.woff") format("woff2"),
+         url("fonts/FormaDJRVariable[opsz\,slnt\,wdth\,wght]-Edu.woff2") format("woff2");
+        font-family: 'Forma';
+        font-style: normal;
+        font-weight: 100 900;
+        }
+
+
+        #full-name {
+            object-fit: contain;
+            margin: 0;
+            display: block;
+            height: auto;
+            width: 90%;
+            top: 90px;
+            position: fixed;
+           text-align: center;
+           transform: translate(5%, 0);
+            
+            
+        }
+
+
+footer{
+    background-color:rgb(249, 138, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo {
+    position: fixed;
+    top: -30px;
+    left: 0;
+    margin: 1em;
+    height: 175px;
+    width: auto;
+    display: flex;
+}
+
+.logo img{
+    height: 100%;
+    width: auto;
+}
