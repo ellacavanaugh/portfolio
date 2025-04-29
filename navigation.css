@@ -22,20 +22,21 @@
 }
 
 .logo{
+   position: fixed;
     height: 175px;
     width: auto;
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
-
+    z-index: 1001;
     
 }
 
 .logo img {
     height: 100%;
     width: auto;
-    display: block;
+
 }
 
 nav {
