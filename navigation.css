@@ -5,38 +5,36 @@
 .page-nav{
   margin: 10px;
   padding: 0px;
+  padding-top: 20px;
+  margin-right: 100px;
 }
 
 #page-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
+    justify-content: flex-start;
+    position: relative;
     width: 100%;
-    z-index: 1000;
-    overflow: hidden;
-
+    padding: 0;
+    margin: 10px;
 
 }
 
 .logo{
-   position: fixed;
+    position: absolute;
+    top: -15px;
+    left: 0;
     height: 175px;
-    width: auto;
-    display: flex;
+    width: auto;   
     margin: 0;
     padding: 0;
-    align-items: center;
-    z-index: 1001;
     
 }
 
 .logo img {
-    height: 100%;
-    width: auto;
-
+  height: 100%; /* Ensure the image scales with the logo container */
+  width: auto;
+  display: block; /* Prevent inline spacing issues */
 }
 
 nav {
@@ -46,10 +44,11 @@ nav {
 
 
   nav ul {
-      margin: 1;
+      margin: 0;
       padding: 0;
       list-style: none;
       display: flex;
+      gap: 1rem;
   }
   
   nav li {

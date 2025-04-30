@@ -36,21 +36,6 @@ footer{
     padding: 1rem;
 }
 
-.logo {
-    position: fixed;
-    top: -30px;
-    left: 0;
-    margin: 1em;
-    height: 175px;
-    width: auto;
-    display: flex;
-}
-
-.logo img{
-    height: 100%;
-    width: auto;
-}
-
 .gallery {
     padding: 0.5rem;
     text-align: center;
@@ -77,6 +62,7 @@ footer{
 	height: 100%;
 	padding-top: 50px;
     margin-left: 30px;
+    position: relative;
 }
 .ella img{
 	width: 50%;
