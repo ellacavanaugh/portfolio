@@ -46,13 +46,16 @@
                     <p6>Taken for my potrait project for my photography class. Pictured is my mom and dog.</p6>
                 </div>
             </div>
+             <!-- Full-page overlay -->
+             <div class="image-overlay"></div>
             </section>
 
             <script>
                 function expandImage(container) {
-                    
+                    const overlay = document.querySelector('.image-overlay');
                     if (container.classList.contains('expanded')) {
                         container.classList.remove('expanded'); 
+                        overlay.style.display = 'none';
                         document.body.style.overflow = 'auto'; 
                     } else {
                         
@@ -61,6 +64,7 @@
                         });
             
                         container.classList.add('expanded'); 
+                        overlay.style.display = 'block';
                         document.body.style.overflow = 'hidden'; 
                     }
                 }

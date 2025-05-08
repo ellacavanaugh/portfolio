@@ -206,6 +206,10 @@ h3 {
     flex-direction: row; 
     background-color: white; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Forma', sans-serif;
+    font-size: 30px;
+    font-weight: 350;
+    text-align: center; 
 }
 
 .image-container.expanded img {

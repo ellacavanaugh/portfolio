@@ -40,13 +40,16 @@
                         <p6>Rise and Shine: A playful take on breakfast aesthetics.</p6>
                     </div>
                 </div>
+                   <!-- Full-page overlay -->
+                   <div class="image-overlay"></div>
                 </section>
 
                 <script>
                     function expandImage(container) {
-                        
+                        const overlay = document.querySelector('.image-overlay');
                         if (container.classList.contains('expanded')) {
                             container.classList.remove('expanded'); 
+                            overlay.style.display = 'none';
                             document.body.style.overflow = 'auto'; 
                         } else {
                             
@@ -55,8 +58,11 @@
                             });
                 
                             container.classList.add('expanded'); 
+                            overlay.style.display = 'block';
                             document.body.style.overflow = 'hidden'; 
                         }
                     }
                 </script>
                 </body>
+
+               

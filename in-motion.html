@@ -33,3 +33,29 @@
         <main> 
             <h3>IN MOTION</h3>
             </main>
+
+
+               <!-- Full-page overlay -->
+               <div class="image-overlay"></div>
+            </section>
+
+            <script>
+                function expandImage(container) {
+                    const overlay = document.querySelector('.image-overlay');
+                    if (container.classList.contains('expanded')) {
+                        container.classList.remove('expanded'); 
+                        overlay.style.display = 'none';
+                        document.body.style.overflow = 'auto'; 
+                    } else {
+                        
+                        document.querySelectorAll('.image-container.expanded').forEach((item) => {
+                            item.classList.remove('expanded');
+                        });
+            
+                        container.classList.add('expanded'); 
+                        overlay.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; 
+                    }
+                }
+            </script>
+            </body>
