@@ -25,16 +25,14 @@
   margin-top: 20px;
 
 }
-
-
-footer{
-    background-color:rgb(249, 138, 251);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+/* Remove margins and padding from the body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent box model */
 }
+
+
 
 .gallery {
     padding: 0.5rem;
@@ -265,3 +263,37 @@ h3 {
     display: block; 
     opacity: 0.95; 
 }
+
+.forma-container{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.forma-container img{
+    width: 100%;
+    height: auto;
+}
+
+#video{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto; 
+    width: 80%;
+    height: auto;
+    padding: 15px;
+}
+
+p7 {
+    font-family: 'Forma', sans-serif;
+    font-size: 15px;
+}
+
