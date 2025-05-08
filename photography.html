@@ -29,3 +29,40 @@
             </ul>
         </nav>
         </label>
+
+        <main> 
+            <h3>PHOTOGRAPHY</h3>
+            </main>
+            <section class="image-gallery">
+            <div class="image-container" onclick="expandImage(this)">
+                <img src="images/Mom and dash looking.jpg" alt="Photo1">
+                <div class="image-info">
+                    <p6>Taken for my potrait project for my photography class. Pictured is my mom and dog.</p6>
+                </div>
+            </div>
+            <div class="image-container" onclick="expandImage(this)">
+                <img src="images/Text.jpg" alt="Photo2">
+                <div class="image-info">
+                    <p6>Taken for my potrait project for my photography class. Pictured is my mom and dog.</p6>
+                </div>
+            </div>
+            </section>
+
+            <script>
+                function expandImage(container) {
+                    
+                    if (container.classList.contains('expanded')) {
+                        container.classList.remove('expanded'); 
+                        document.body.style.overflow = 'auto'; 
+                    } else {
+                        
+                        document.querySelectorAll('.image-container.expanded').forEach((item) => {
+                            item.classList.remove('expanded');
+                        });
+            
+                        container.classList.add('expanded'); 
+                        document.body.style.overflow = 'hidden'; 
+                    }
+                }
+            </script>
+            </body>

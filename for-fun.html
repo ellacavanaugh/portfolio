@@ -29,3 +29,56 @@
             </ul>
         </nav>
         </label>
+
+        <main> 
+            <h3>FOR FUN</h3>
+            </main>
+            <section class="image-gallery">
+                <div class="image-container" onclick="expandImage(this)">
+                    <img src="images/bubbly.png" alt="Bubbly" class="Bubbly">
+                    <div class="image-info">
+                        <p6>This image describes the world bubbly through design</p6>
+                    </div>
+                </div>
+                <div class="image-container" onclick="expandImage(this)">
+                    <img src="images/faces.jpg" alt="Faces" class="Faces">
+                    <div class="image-info">
+                        <p6>Made in procreate</p6>
+                    </div>
+                </div>
+                <div class="image-container" onclick="expandImage(this)">
+                    <img src="images/cape cod postcard.jpg" alt="Postcard" class="Postcard">
+                    <div class="image-info">
+                        <p6>Made in illustrator, a take on a vintage postcard</p6>
+                    </div>
+                </div>
+                <div class="image-container" onclick="expandImage(this)">
+                    <img src="images/PSA Poster3.jpg" alt="PSA Poster" class="PSA Poster">
+                    <div class="image-info">
+                        <p6>One of my first designs that I actually like</p6>
+                    </div>
+                </div>
+                <!-- Full-page overlay -->
+                <div class="image-overlay"></div>
+                </section>
+
+                <script>
+                    function expandImage(container) {
+                        const overlay = document.querySelector('.image-overlay');
+                        if (container.classList.contains('expanded')) {
+                            container.classList.remove('expanded'); 
+                            overlay.style.display = 'none';
+                            document.body.style.overflow = 'auto'; 
+                        } else {
+                            
+                            document.querySelectorAll('.image-container.expanded').forEach((item) => {
+                                item.classList.remove('expanded');
+                            });
+                
+                            container.classList.add('expanded'); 
+                            overlay.style.display = 'block';
+                            document.body.style.overflow = 'hidden'; 
+                        }
+                    }
+                </script>
+                </body>

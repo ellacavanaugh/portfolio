@@ -29,3 +29,34 @@
             </ul>
         </nav>
         </label>
+
+        <main> 
+            <h3>THE CANDY SHOP</h3>
+            </main>
+            <section class="image-gallery">
+                <div class="image-container" onclick="expandImage(this)">
+                    <img src="images/bubblegum.png" alt="Bubblegum">
+                    <div class="image-info">
+                        <p6>Who wants a piece of bubblegum? I do!</p6>
+                    </div>
+                </div>
+                </section>
+
+                <script>
+                    function expandImage(container) {
+                        
+                        if (container.classList.contains('expanded')) {
+                            container.classList.remove('expanded'); 
+                            document.body.style.overflow = 'auto'; 
+                        } else {
+                            
+                            document.querySelectorAll('.image-container.expanded').forEach((item) => {
+                                item.classList.remove('expanded');
+                            });
+                
+                            container.classList.add('expanded'); 
+                            document.body.style.overflow = 'hidden'; 
+                        }
+                    }
+                </script>
+                </body>
